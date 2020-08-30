@@ -1,0 +1,56 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  background-color: #f1f1e8;
+}
+
+.textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;;
+}
+
+.past {
+  background-color: #bfdcae;
+  color: white;
+}
+
+.hour {
+  font-size: 20px;
+}
+
+.present {
+  background-color: #81b214;
+  color: white;
+}
+
+.future {
+  background-color: #206a5d;
+  color: white;
+}
+
+.saveBtn {
+  background-color: #f1f1e8;
+  color: w#81b214;
+}
+
+.saveBtn:hover {
+  font-size: 30px;
+  transition: all .3s ease-in-out;
+}
