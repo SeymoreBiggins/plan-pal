@@ -4,7 +4,7 @@
 * automatically updates time and date
 * changes schedule based on current time
 
-![Plan Pal](assets\images\demo.JPG)
+![Plan Pal](https://raw.githubusercontent.com/SeymoreBiggins/Plan-Pal/master/assets/images/demo.JPG)
 
 ## Made in 2020 by Zachary Harris
 
