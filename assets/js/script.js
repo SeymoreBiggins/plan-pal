@@ -1,5 +1,6 @@
 var time;
 var momentCurrentDate;
+var tasks = [];
 
 var updateDate = function() {
   var momentCurrentDate =  moment().format('MMMM Do YYYY, h:mm:ss a');
@@ -11,6 +12,7 @@ setInterval(function() {
 }, 1000);
 
 var generateTimeBlocks = function () {
+
   for (var i = 0; i < 17; i++) {
     var tempID = i + 6;
     var timeFrom = moment().startOf('day').fromNow();
@@ -51,10 +53,10 @@ var generateTimeBlocks = function () {
       .attr("id","row" + tempID + "col" + 1)
       .attr("class","col-md-2" + " hour m-auto text-center border-right")
       .text(time),
-      $('<span/>')
+      $('<p/>')
       .attr("id","row" + tempID + "col" + 2)
-      .attr("class","col-md-8" + " textarea m-auto text-wrap text-center")
-      .text(""),
+      .attr("class","col-md-8" + " list-group textarea m-auto text-wrap text-center")
+      .text("enter task"),
       $('<button/>')
       .attr("id","row" + tempID + "col" + 3)
       .attr("class","col-md-2" + " text-center saveBtn")
@@ -62,7 +64,5 @@ var generateTimeBlocks = function () {
     );
   };
 };
-
-
 
 generateTimeBlocks();
